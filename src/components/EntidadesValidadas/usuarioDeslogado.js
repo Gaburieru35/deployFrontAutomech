@@ -4,9 +4,9 @@ export function UsuarioDeslogado(){
         let tipo = localStorage.getItem("tipo")
         let id = localStorage.getItem("id")
 
-        if(tipo == 1){ 
+        if(tipo == 0){ 
             window.location.href = "/alterarCadastro/"+id
-        }else if(tipo == 0){
+        }else if(tipo == 1){
             window.location.href = "/indicadores"
         }
     }
