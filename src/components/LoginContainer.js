@@ -45,7 +45,7 @@ export class LoginContainer extends React.Component{
                 localStorage.setItem("id", data.userId)
                 localStorage.setItem("tipo", tipo)
  
-                let hrefOficina = window.location.protocol + `//deploy-front-automech.vercel.app/home?id=${data.userId}&tipo=${tipo}` //localhost:3000/home?id=${data.userId}&tipo=${tipo}
+                let hrefOficina = window.location.protocol + `//deploy-oficina-automech.vercel.app/home?id=${data.userId}&tipo=${tipo}` //localhost:3000/home?id=${data.userId}&tipo=${tipo}
                 let hrefCliente = `/oficina`
 
                 window.location.href = (tipo == 0 ? hrefCliente : hrefOficina)
