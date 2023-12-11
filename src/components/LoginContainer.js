@@ -37,7 +37,7 @@ export class LoginContainer extends React.Component{
         const email = document.getElementById("caduser_email").value
         fetch(`https://4.227.162.137:443/${controller}/logar/${email}`, {
             method: "GET",
-            headers: {'Content-Type': 'application/json', 'Access-Control-Allow-Origin' : '*'}
+            headers: {'Content-Type': 'application/json'}
         }).then(res => {
             return res.json()
         }).then(data => {
