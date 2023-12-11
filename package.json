@@ -1,6 +1,7 @@
 {
   "name": "automech",
   "version": "0.1.0",
+  "proxy": "https://4.227.162.137:443"
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
